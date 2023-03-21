@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="uft-8"> 
+       <meta nome="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        input {
+            color:rgba(255, 136, 0, 0.774);
+            border-radius:5%;
+            border-color: grey;
+        }
+        body{
+            background-color: wheat;
+        }
+        h2{
+            color:blueviolet
+        }
+    </style>    
+    
+    
+       <title>
+        Calculo Temperatura
+    </title>
+    <script type="text/Javascript">
+        //°C=(°F-32)/1.8
+        //°C=K-273.15
+
+
+        function Converter() {
+            let f = document.getElementById("tempF").value;
+            let tc = document.getElementById("tempC").value;
+        if(f==""){
+            document.getElementById("tempF").
+                }
+            let c = (f-32)/1.8;
+           // document.getElementById("tempC"). value = c;
+           // let k = (f-32)/1.8+273.15;
+            //document.getElementById("tempK"). value = k;
+            
+ //fluxo gramas 
+
+            
+        }
+        function Limpar() {
+            if(f.c.k ==""){
+
+            }
+
+        
+                    }
+    </script>
+    
+    
+    
+    </head>
+    
+    <body>
+        <h2>Exemplo página com entrada de dados e operações matemáticass</h2>
+        <form>
+          
+        <label for="tempF">Farenheit</label><br>   
+        <input type="number" id="tempF" name="tempF" placeholder="Farenheit"><br><br>
+          
+          <label for="tempC">Celsius</label><br>
+          <input type="number" id="tempC" name="tempC" placeholder="Celsius"><br><br>
+
+
+           <label for="tempK">Kelvin</label><br>
+           <input type="number" id="tempK" name="tempK" placeholder="Kelvin"><br><br>
+          
+          
+    <input type="button" id="btnConverter" onclick="Converter()" value="Converter">
+    <input type="button" id="btnLimpar" onclick="Limpar()" value="Limpar">    
+        </form>
+
+    </body>
+</html>
