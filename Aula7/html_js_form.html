@@ -1,78 +1,205 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="uft-8">
-        <meta nome="viewport" content="width=device-width, initial-scale=1">
-        <title>
-            Formulário
-        </title>
-        <script type="text/javascript">
-            function Enviar(){
-                 var par = document.createElement('p');
-                  var nome = document.getElementById("formNome")
-                   var mensagem= '';
-                if(nome.value != ""){
-                   var txt = ' Agradecemos o contato. \n ' + nome.value + ' não deixe de voltar\n';
-                     var p2 = document.createElement('p');
-                      p2.textContent = txt;
-                      p2.style.backgroundColor = "lightblue";
-                      document.body.appendChild(p2);
-                }
-                  var mail = document.getElementById('formEmail');
-                if(mail.value != '')
-                {
-                 var txt2 = 'O email informado é: '+ mail.value;
-                  var p3 = document.createElement('p');
-                   p3.textContent = txt2;
-                   document.body.appendChild(p3); 
-                   p3.style.color = "red"; 
-                }
-
-                 var valores =document.getElementsByName("cVeiculo")
-                for(var i=0;i<valores.length;i++)
-
-                {
-                    if (valores[i]. checked)
-                    {
-                        mensagem = mensagem + "" + valores[i].value + ' está selecionado \n';
-                        document
-                    }
-                    else
-                    {
-                        mensagem = mensagem+ "" + valores[i].value + ' não está selecionado \n'
-                    }
-                }
-
-              //  var par = document.createElement('p');
-                par.textContent = mensagem;
-                document.body.appendChild(par);
-                //alert (mensagem);
+  
+<head>
+    <title>
+        Create a Portfolio Gallery
+        using HTML and CSS
+    </title>
+     
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+         
+    <style>
+      
+        /* wildcard styling */
+        * {
+            box-sizing: border-box;
+        }
+          
+        /* padding for whole body */
+        body {
+            padding: 15px;
+        }
+          
+        /* styling body */
+        .container {
+            max-width: 1200px;
+            margin: auto;
+        }
+          
+        h1 {
+            color: green;
+        }
+          
+        /* anchor tag decoration */
+        a {
+            text-decoration: none;
+            color: #5673C8;
+        }
+          
+        a:hover {
+            color: lightblue;
+        }
+          
+        /* paragraph tga decoration */
+        p {
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 4;
+            overflow: hidden;
+      
+        }
+          
+        /* row and column decoration */
+        .row {
+            margin: 0px -18px;
+            padding: 8px;
+        }
+          
+        .row > .column {
+            padding: 6px;
+        }
+          
+        .column {
+            float: left;
+            width: 25%;
+        }
+          
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+          
+        /* content decoration */
+        .content {
+            background-color: white;
+            padding: 10px;
+            border: 1px solid gray;
+        }
+          
+        /* window size 850 width set */
+        @media screen and (max-width: 850px) {
+            .column {
+                width: 50%;
             }
-        </script>
-    </head>
-    <body>
-        <h1>Exemplo de elementos de um Formulário</h1>
-
-        <form>
-            <label for="formNome">Nome: </label><br>
-            <input type="text" id="formNome" name="formNome" placeholder="Nome Sobrenome" ><br><br>
-            <label for="formEmail">Email :</label><br>
-            <input type="email" name="formmEmail" id="formEmail" placeholder="email@email.com" ><br><br>
-        
-        <fieldset>
-            <legend>Selecione os meios de transporte utilizados</legend>
-            <input type="checkbox" name="cVeiculo" id="cVeiculo" value="Onibus">
-            <label for="cVeiculo">Ônibus</label><br>
-
-            <input type="checkbox" name="cVeiculo" id="cVeiculo2" value="Trem">
-            <label for="cVeiculo2">Trem</label><br>
-
-            <input type="checkbox" name="cVeiculo" id="cVeiculo2" value="Metro">
-            <label for="cVeiculo2">Metro</label><br>
-        </fieldset><br>
-        
-        <input type="button" id="btnSalvar" onclick="Enviar()" value="Salvar">
-        </form>
-
-    </body>
-</html>
+        }
+      
+        /* window size 400 width set */
+        @media screen and (max-width: 400px) {
+            .column {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+ 
+<body>
+      
+    <!-- title and tag -->
+    <div class="container">
+        <h1>GeeksforGeeks</h1>
+        <h3>A Computer Science Portal for Geeks</h3>
+        <hr>
+  
+        <!-- Content of the body-->
+        <h2>Portfolio</h2>
+        <div class="row">
+            <div class="column">
+                <div class="content">
+                    <img src=
+"https://www.geeksforgeeks.org/wp-content/uploads/html.png"
+                        alt="" style="width:100%">
+                    <h3>
+                        <a href="#">HTML Tutorials</a>
+                    </h3>
+                     
+ 
+<p>
+                        HTML stands for Hyper Text Markup
+                        Language. It is used to design web
+                        pages using markup language. HTML
+                        is the combination of Hypertext and
+                        Markup language. Hypertext defines
+                        the link between the web pages.
+                    </p>
+ 
+ 
+                </div>
+            </div>
+             
+            <div class="column">
+                <div class="content">
+                    <img src=
+"https://www.geeksforgeeks.org/wp-content/uploads/CSS.png"
+                        alt="" style="width:100%">
+                    <h3>
+                        <a href="#">CSS Tutorials</a>
+                    </h3>
+                     
+                     
+ 
+<p>
+                        Cascading Style Sheets, fondly referred
+                        to as CSS, is a simply designed language
+                        intended to simplify the process of
+                        making web pages presentable. CSS allows
+                        you to apply styles to web pages.
+                    </p>
+ 
+ 
+                </div>
+            </div>
+             
+            <div class="column">
+                <div class="content">
+                    <img src=
+"https://www.geeksforgeeks.org/wp-content/uploads/php-1.png"
+                        alt="" style="width:100%">
+                    <h3>
+                        <a href="#">PHP Tutorials</a>
+                    </h3>
+                     
+                     
+ 
+<p>
+                        The term PHP is an acronym for PHP:
+                        Hypertext Preprocessor. PHP is a
+                        server-side scripting language
+                        designed specifically for web
+                        development. PHP can be easily
+                        embedded in HTML files.
+                    </p>
+ 
+ 
+                </div>
+            </div>
+             
+            <div class="column">
+                <div class="content">
+                    <img src=
+"https://www.geeksforgeeks.org/wp-content/uploads/javascript.png"
+                        alt="" style="width:100%">
+                    <h3>
+                        <a href="#">JavaScript Tutorials</a>
+                    </h3>
+                     
+                     
+ 
+<p>
+                        Javascript was developed by Brendan
+                        Eich in 1995. At first, it was called
+                        LiveScript but was later name to
+                        JavaScript. JavaScript is the muscle
+                        of the structure
+                    </p>
+ 
+ 
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+  
+</html>        
