@@ -28,3 +28,16 @@ ul {
  .center {
             text-align: center;
         }
+
+        .section{
+            display: flex;
+            background-color: black;
+            width:33vh;
+
+        }
+        .imgpro{
+            width: 15vw;
+            height: 15vh;
+            padding-left: 15px;
+            
+        }

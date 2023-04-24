@@ -6,6 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contatos</title>
     <link rel="stylesheet" href="contatos.css">
+    
+    <script type="text/javascript">
+
+        function Enviar(){
+            let n = document.getElementById("Nome").value;
+            let e = document.getElementById("Email").value;
+            let m = document.getElementById("Mensagem").value;
+         
+ 
+ 
+         
+         
+         
+            if( n=="" && e=="" && m==""){
+                
+                alert('Campos vazios, Por favor revisar');
+                document.getElementById("Nome").focus
+                document.getElementById("Nome").style.borderColor = "red";  
+                document.getElementById("Email").focus;
+                document.getElementById("Email").style.borderColor = "red";    
+                document.getElementById("Mensagem").focus;
+                document.getElementById("Mensagem").style.borderColor = "red";  
+   
+
+            }
+
+
+        }
+
+    </script>
+
+
+
+
 </head>
 <body>
 
@@ -23,5 +57,24 @@
                 </li>
             </ul>
         </nav>
+        <h1>Entre em contato</h1>
+        <form class="cx">
+            <label for=" Name">Nome</label><br>
+            <input type="text" id="Nome" name="Nome"  required><br>
+
+            <label for="Email">Email</label><br>
+            <input type="email" id="Email" name="Email"  required><br>
+
+            <label for="Mensagem">Mensagem</label><br>
+            <textarea name="Mensagem" id="Mensagem" required></textarea><br>
+
+            <input type="button" id="btnEnviar" onclick="Enviar()" value="Enviar">
+        </form>
+    
+        <footer>
+            <a href="https://wa.me/5511981391788" target="_blank" rel="noopener noreferrer">
+            <img src="./imagem/whatsapp.svg">
+            <p>Whatsapp</p>
+        </footer>
 </body>
 </html>
