@@ -32,7 +32,12 @@
 
             }
 
-
+            else if(n!="" && e!="" && m!=""){
+            document.getElementById("Nome").value="";
+            document.getElementById("Email").value="";
+            document.getElementById("Mensagem").value="";
+            alert('Obrigado por entrar em contato, retornaremos em breve!')
+            }
         }
 
     </script>
@@ -43,7 +48,7 @@
 </head>
 <body>
 
-        <div class="container">
+    <div class="container">
         <nav>
             <ul>
                 <li>
@@ -59,14 +64,14 @@
         </nav>
         <h1>Entre em contato</h1>
         <form class="cx">
-            <label for=" Name">Nome</label><br>
-            <input type="text" id="Nome" name="Nome"  required><br>
+            <label for="Nome">Nome</label><br>
+            <input type="text" id="Nome" name="Nome"  required=""><br>
 
             <label for="Email">Email</label><br>
-            <input type="email" id="Email" name="Email"  required><br>
+            <input type="email" id="Email" name="Email"  required=""><br>
 
             <label for="Mensagem">Mensagem</label><br>
-            <textarea name="Mensagem" id="Mensagem" required></textarea><br>
+            <textarea name="Mensagem" id="Mensagem" required=""></textarea><br>
 
             <input type="button" id="btnEnviar" onclick="Enviar()" value="Enviar">
         </form>
@@ -75,6 +80,11 @@
             <a href="https://wa.me/5511981391788" target="_blank" rel="noopener noreferrer">
             <img src="./imagem/whatsapp.svg">
             <p>Whatsapp</p>
+            </a>
+            <a href="https://drive.google.com/file/d/1QPowFZ11WHLar50DpkgAMxXxS6-eCr4p/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+            <img src="./imagem/Curriculo.svg">
+            <p>Curriculo</p>
+            </a>
         </footer>
 </body>
 </html>

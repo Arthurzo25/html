@@ -1,6 +1,6 @@
 body {
     color: white;
-    background-color:black;
+    background-color:#2d3839;
     font-family: Arial, Helvetica, sans-serif;
     min-width: 100vh;
     display: grid;
@@ -18,26 +18,17 @@ ul {
         }
 
     .cx {
-        width: 100%;
-        max-width: 30rem;
+        max-width: 222px;
+        max-height: 155px;
         align-items: center;
         justify-content: center;
 
-
-
-    }
-
-    section{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        padding: 10px 45px;
-        background: #665c52;
-        width: 500px;
-        box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
         
+
+
     }
+
+
 
 
 
@@ -53,7 +44,7 @@ ul {
 
         h1 {
            text-align: center;
-            color:blueviolet
+            color:#6e9987;
         }
 
         footer img {
@@ -76,4 +67,7 @@ ul {
 
        .container {
         padding: 0px 50px;
+       }
+       nav a:hover {
+        color: #114d4d;
        }
