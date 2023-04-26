@@ -34,7 +34,7 @@ ul {
         h3{
             color:#e0e4ce;
         }
-        footer img {
+        .pro {
             width: 40px;
             height: 40px;
         }
@@ -47,7 +47,10 @@ ul {
         margin: 20px;
         text-align: center;
        }
-
+       .pro1 {
+        width: 1500px;
+        height: 1200px;
+       }
        footer p {
         margin-top: 2px;
        }
